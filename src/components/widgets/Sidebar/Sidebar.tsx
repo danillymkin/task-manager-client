@@ -27,8 +27,6 @@ const Sidebar: FunctionComponent<Props> = ({
   const sidebarClasses = classNames({
     'flex flex-col overflow-hidden justify-between items-start pt-10 pb-6 border-r border-r-gray-200 dark:border-b-gray-900 h-screen bg-white dark:bg-black':
       true,
-    'w-[300px]': isSidebarOpen,
-    'w-[90px]': !isSidebarOpen,
   })
 
   return (
