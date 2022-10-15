@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Dashboard from './components/pages/Dashboard/Dashboard'
 import ErrorPage from './components/pages/ErrorPage/ErrorPage'
-import { ThemeProvider } from './contexts/ThemeContext'
+import { ThemeProvider } from './context/ThemeContext'
 
 import './index.css'
 
