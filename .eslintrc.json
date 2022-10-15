@@ -12,11 +12,12 @@
     "simple-import-sort"
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "@typescript-eslint/no-empty-interface": "warn"
   },
   "overrides": [
     {
