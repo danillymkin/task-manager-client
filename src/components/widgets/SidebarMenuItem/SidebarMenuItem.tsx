@@ -44,7 +44,7 @@ const SidebarMenuItem: FunctionComponent<Props> = ({ item }): JSX.Element => {
     'text-blue-400 font-bold dark:text-white before:opacity-100'
 
   return (
-    <NavLink to={path}>
+    <NavLink to={path} end={path === '/'}>
       {({ isActive }) => (
         <div
           className={classNames({
