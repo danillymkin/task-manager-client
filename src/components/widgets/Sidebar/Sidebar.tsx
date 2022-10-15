@@ -32,6 +32,7 @@ const Sidebar: FunctionComponent<Props> = ({
   return (
     <motion.aside
       animate={isSidebarOpen ? 'open' : 'closed'}
+      initial={false}
       variants={variants}
       className={sidebarClasses}
     >
