@@ -23,6 +23,7 @@ const SidebarHeader: FunctionComponent = (): JSX.Element => {
         <motion.span
           animate={isSidebarOpen ? 'open' : 'closed'}
           variants={variants}
+          initial={false}
           transition={{ duration: 0.2 }}
           className={
             'text-xl text-gray-900 dark:text-white font-medium select-none'

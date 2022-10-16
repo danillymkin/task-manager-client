@@ -33,13 +33,13 @@ const SidebarMenuItem: FunctionComponent<Props> = ({ item }): JSX.Element => {
   const iconClasses = 'min-h-[22px] min-w-[22px]'
 
   const baseItemClasses =
-    'relative inline-flex w-full whitespace-nowrap items-center gap-x-6 pl-7 pr-3.5 py-4 rounded-[0.75rem] select-none'
+    'relative inline-flex w-full whitespace-nowrap border border-white dark:border-black items-center gap-x-6 pl-7 pr-3.5 py-4 rounded-[0.75rem] select-none'
   const notActiveItemClasses =
-    'text-gray-700 dark:text-gray-600 font-medium border border-white dark:border-black transition hover:border-gray-200 dark:hover:border-gray-900'
+    'text-gray-700 dark:text-gray-600 font-medium transition hover:border-gray-200 dark:hover:border-gray-900'
   const activeLineClasses =
     'before:absolute before:w-[5px] before:h-full before:bg-blue-400 before:left-[-10px] before:rounded-r-full before:transition before:opacity-0'
   const activeOpenItem =
-    'text-blue-400 bg-blue-50 font-bold dark:text-white dark:bg-slate-900'
+    'text-blue-400 bg-blue-50 font-semibold dark:text-white dark:bg-slate-900'
   const activeClosedItem =
     'text-blue-400 font-bold dark:text-white before:opacity-100'
 
@@ -64,6 +64,7 @@ const SidebarMenuItem: FunctionComponent<Props> = ({ item }): JSX.Element => {
           <motion.span
             animate={isSidebarOpen ? 'open' : 'closed'}
             variants={variants}
+            initial={false}
             transition={{ duration: 0.2 }}
             className={'text-sm'}
           >
