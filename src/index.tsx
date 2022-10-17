@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import DashboardLayout from './components/layouts/DashboardLayout/DashboardLayout'
-import Dashboard from './components/pages/Dashboard/Dashboard'
+import DashboardPage from './components/pages/DashboardPage/DashboardPage'
 import ErrorPage from './components/pages/ErrorPage/ErrorPage'
 import TasksPage from './components/pages/TasksPage/TasksPage'
 import TasksToday from './components/widgets/TasksToday/TasksToday'
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Dashboard />,
+        element: <DashboardPage />,
         errorElement: <ErrorPage />,
       },
       {
