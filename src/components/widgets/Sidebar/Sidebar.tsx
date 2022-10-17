@@ -25,7 +25,7 @@ const Sidebar: FunctionComponent<Props> = ({
   const { isSidebarOpen } = useContext(DashboardContext)
 
   const sidebarClasses = classNames({
-    'flex flex-col overflow-hidden justify-between items-start pt-10 pb-6 border-r border-r-gray-200 dark:border-r-gray-900 h-screen bg-white dark:bg-black':
+    'flex flex-col overflow-hidden justify-between items-start pt-7 pb-6 border-r border-r-gray-200 dark:border-r-gray-900 h-screen bg-white dark:bg-black':
       true,
   })
 
