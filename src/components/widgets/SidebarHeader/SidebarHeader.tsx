@@ -14,7 +14,7 @@ const SidebarHeader: FunctionComponent = (): JSX.Element => {
   return (
     <header
       className={
-        'flex w-full px-[2.125rem] py-6 border-b border-b-gray-200 dark:border-b-gray-900'
+        'flex w-full px-[2.125rem] py-6 border-b border-b-gray-200 dark:border-b-zinc-800'
       }
     >
       <div className={'inline-flex whitespace-nowrap items-center gap-x-6'}>

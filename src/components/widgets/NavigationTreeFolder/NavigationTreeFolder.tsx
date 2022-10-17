@@ -30,7 +30,7 @@ const NavigationTreeFolder: FunctionComponent<Props> = ({
           className={classNames({
             'flex items-center justify-between px-4 py-2.5 text-sm rounded-md':
               true,
-            'bg-teal-50': isActive,
+            'bg-teal-50 dark:bg-slate-900': isActive,
           })}
         >
           <div className={'flex items-center gap-3.5'}>
@@ -38,8 +38,8 @@ const NavigationTreeFolder: FunctionComponent<Props> = ({
 
             <span
               className={classNames({
-                'text-gray-500': !isActive,
-                'text-gray-700 font-semibold': isActive,
+                'text-gray-300 dark:text-gray-400': !isActive,
+                'text-gray-700 font-semibold dark:text-white': isActive,
               })}
             >
               {name}

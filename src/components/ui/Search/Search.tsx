@@ -1,6 +1,5 @@
 import React, { FunctionComponent, HTMLAttributes } from 'react'
 import { BsSearch } from 'react-icons/bs'
-import classNames from 'classnames'
 
 interface SearchProps extends HTMLAttributes<HTMLInputElement> {
   value: string
@@ -18,9 +17,9 @@ const Search: FunctionComponent<Props> = ({ value, ...props }): JSX.Element => {
 
       <input
         type="text"
-        className={classNames({
-          'w-full outline-0 text-sm pl-7 py-1.5': true,
-        })}
+        className={
+          'w-full outline-0 text-sm pl-7 py-1.5 dark:bg-black dark:text-white'
+        }
         value={value}
         {...props}
       />

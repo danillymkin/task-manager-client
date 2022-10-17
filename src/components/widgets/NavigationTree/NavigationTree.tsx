@@ -62,7 +62,7 @@ const NavigationTree: FunctionComponent = (): JSX.Element => {
   return (
     <div
       className={
-        'flex flex-col h-screen min-w-[260px] p-4 gap-8 border-r border-r-gray-200 dark:border-b-gray-900'
+        'flex flex-col h-screen min-w-[260px] p-4 gap-8 dark:bg-black border-r border-r-gray-200 dark:border-r-zinc-800'
       }
     >
       <div className={'px-4'}>
