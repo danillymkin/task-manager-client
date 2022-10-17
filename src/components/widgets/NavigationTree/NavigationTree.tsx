@@ -5,7 +5,7 @@ import { useDebounce, useUpdateEffect } from 'usehooks-ts'
 import Search from '../../ui/Search/Search'
 import NavigationTreeFolder, {
   NavigationTreeFolderType,
-} from '../NavigationTreeItem/NavigationTreeFolder'
+} from '../NavigationTreeFolder/NavigationTreeFolder'
 
 const items: NavigationTreeFolderType[] = [
   {
