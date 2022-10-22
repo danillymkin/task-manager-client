@@ -1,5 +1,9 @@
 import React, { ChangeEvent, FunctionComponent, useState } from 'react'
-import { BsCalendarFill } from 'react-icons/bs'
+import {
+  BsCalendar2WeekFill,
+  BsCalendarDateFill,
+  BsInboxFill,
+} from 'react-icons/bs'
 import { useDebounce, useUpdateEffect } from 'usehooks-ts'
 
 import Search from '../../ui/Search/Search'
@@ -13,7 +17,7 @@ const items: NavigationTreeFolderType[] = [
     path: 'incoming',
     name: 'Входящие',
     quantity: 5,
-    Icon: BsCalendarFill,
+    Icon: BsInboxFill,
     iconColor: '#60A5FA',
   },
   {
@@ -21,14 +25,14 @@ const items: NavigationTreeFolderType[] = [
     path: 'today',
     name: 'Сегодня',
     quantity: 3,
-    Icon: BsCalendarFill,
+    Icon: BsCalendarDateFill,
     iconColor: '#7EB167',
   },
   {
     id: 3,
     path: 'upcoming',
     name: 'Предстоящие',
-    Icon: BsCalendarFill,
+    Icon: BsCalendar2WeekFill,
     iconColor: '#6C64A8',
   },
 ]

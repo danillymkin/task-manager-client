@@ -38,7 +38,7 @@ const NavigationTreeFolder: FunctionComponent<Props> = ({
 
             <span
               className={classNames({
-                'text-gray-300 dark:text-gray-400': !isActive,
+                'text-gray-400': !isActive,
                 'text-gray-700 font-semibold dark:text-white': isActive,
               })}
             >
