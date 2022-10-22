@@ -7,7 +7,7 @@ import { navigationConfig } from './navigationConfig'
 
 const DashboardLayout: FunctionComponent = (): JSX.Element => {
   return (
-    <div className={'flex h-screen w-full'}>
+    <div className={'flex h-screen w-full overflow-hidden'}>
       <Sidebar navigationConfig={navigationConfig} />
 
       <main className={'h-screen flex-1'}>
