@@ -16,9 +16,11 @@ const TasksSection: FunctionComponent<Props> = ({
   return (
     <section className={'flex flex-col overflow-hidden w-full'}>
       <div
-        className={'flex justify-between border-b border-b-slate-200 py-2.5'}
+        className={
+          'flex justify-between border-b border-b-slate-200 dark:border-b-zinc-800 py-2.5'
+        }
       >
-        <h2 className={'text-sm font-semibold'}>{name}</h2>
+        <h2 className={'text-sm font-semibold dark:text-white'}>{name}</h2>
 
         {actions}
       </div>
