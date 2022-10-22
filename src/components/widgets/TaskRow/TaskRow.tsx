@@ -20,11 +20,13 @@ const TaskRow: FunctionComponent<Props> = ({
   const [dateOfDeadline, isOverdue] = useRelativeTime(deadline)
 
   return (
-    <div className={'border-b border-b-slate-200 py-2.5'}>
+    <div
+      className={'border-b border-b-slate-200 dark:border-b-zinc-800 py-2.5'}
+    >
       <div className={'flex gap-3 items-starts'}>
         <button
           className={
-            'flex items-center justify-center w-5 h-5 mt-0.5 rounded-full border-2 border-red-400 text-red-400 bg-red-50'
+            'flex items-center justify-center w-5 h-5 mt-0.5 rounded-full border-2 border-red-400 text-red-400 bg-red-600/10'
           }
         >
           <BsCheck2
@@ -34,10 +36,14 @@ const TaskRow: FunctionComponent<Props> = ({
         </button>
 
         <div className={'flex flex-col flex-1 gap-1'}>
-          <h3 className={'text-sm text-gray-800'}>{name}</h3>
+          <h3 className={'text-sm text-gray-800 dark:text-white'}>{name}</h3>
 
           {description && (
-            <p className={'text-xs text-gray-500 line-clamp-1'}>
+            <p
+              className={
+                'text-xs text-gray-500 line-clamp-1 dark:text-gray-400'
+              }
+            >
               {description}
             </p>
           )}
@@ -46,7 +52,7 @@ const TaskRow: FunctionComponent<Props> = ({
             <span
               className={classNames({
                 'text-xs': true,
-                'text-red-600': isOverdue,
+                'text-red-600 dark:text-red-500': isOverdue,
                 'text-green-600': !isOverdue,
               })}
             >
