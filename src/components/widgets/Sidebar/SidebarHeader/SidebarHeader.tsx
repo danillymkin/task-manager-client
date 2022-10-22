@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useContext } from 'react'
 import { motion, Variants } from 'framer-motion'
 
-import { DashboardContext } from '../../../context/DashboardContext'
+import { DashboardContext } from '../../../../context/DashboardContext'
 
 const variants: Variants = {
   open: { opacity: 1 },

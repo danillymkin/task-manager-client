@@ -2,7 +2,7 @@ import React, { FunctionComponent, useContext } from 'react'
 import { BsChevronRight } from 'react-icons/bs'
 import classNames from 'classnames'
 
-import { DashboardContext } from '../../../context/DashboardContext'
+import { DashboardContext } from '../../../../context/DashboardContext'
 
 const SidebarCollapse: FunctionComponent = (): JSX.Element => {
   const { isSidebarOpen, toggleSidebar } = useContext(DashboardContext)
