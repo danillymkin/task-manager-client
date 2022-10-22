@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { motion } from 'framer-motion'
 import { Variants } from 'framer-motion'
 
-import { DashboardContext } from '../../../context/DashboardContext'
+import { DashboardContext } from '../../../../context/DashboardContext'
 
 export type SidebarMenuItemType = {
   path: string

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import { Outlet } from 'react-router-dom'
 
-import Sidebar from '../../widgets/Sidebar/Sidebar'
+import Sidebar from '../../widgets/Sidebar'
 
 import { navigationConfig } from './navigationConfig'
 

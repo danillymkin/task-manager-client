@@ -4,9 +4,10 @@ import { motion, Variants } from 'framer-motion'
 
 import { DashboardContext } from '../../../context/DashboardContext'
 import { NavigationConfig } from '../../layouts/DashboardLayout/navigationConfig'
-import SidebarCollapse from '../SidebarCollapse/SidebarCollapse'
-import SidebarHeader from '../SidebarHeader/SidebarHeader'
-import SidebarMenu from '../SidebarMenu/SidebarMenu'
+
+import SidebarCollapse from './SidebarCollapse/SidebarCollapse'
+import SidebarHeader from './SidebarHeader/SidebarHeader'
+import SidebarMenu from './SidebarMenu/SidebarMenu'
 
 interface SidebarProps {
   navigationConfig: NavigationConfig

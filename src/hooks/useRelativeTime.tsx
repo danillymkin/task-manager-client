@@ -2,12 +2,10 @@ import dayjs from 'dayjs'
 import isToday from 'dayjs/plugin/isToday'
 import isTomorrow from 'dayjs/plugin/isTomorrow'
 import isYesterday from 'dayjs/plugin/isYesterday'
-import relativeTime from 'dayjs/plugin/relativeTime'
 
 dayjs.extend(isToday)
 dayjs.extend(isTomorrow)
 dayjs.extend(isYesterday)
-dayjs.extend(relativeTime)
 
 export const useRelativeTime = (
   date: string | undefined,
@@ -24,5 +22,8 @@ export const useRelativeTime = (
     return ['Завтра', false]
   }
 
-  return [dayjs(date).locale('ru').fromNow(), dayjs(date).isBefore(dayjs())]
+  return [
+    dayjs(date).locale('ru').format('DD MMM'),
+    dayjs(date).isBefore(dayjs()),
+  ]
 }

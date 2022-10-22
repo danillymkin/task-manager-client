@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import { NavigationConfig } from '../../layouts/DashboardLayout/navigationConfig'
+import { NavigationConfig } from '../../../layouts/DashboardLayout/navigationConfig'
 import SidebarMenuItem from '../SidebarMenuItem/SidebarMenuItem'
 
 interface SidebarMenuProps {

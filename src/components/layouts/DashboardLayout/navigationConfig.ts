@@ -11,7 +11,7 @@ import {
   BsPeopleFill,
 } from 'react-icons/bs'
 
-import { SidebarMenuItemType } from '../../widgets/SidebarMenuItem/SidebarMenuItem'
+import { SidebarMenuItemType } from '../../widgets/Sidebar/SidebarMenuItem/SidebarMenuItem'
 
 export type NavigationConfig = SidebarMenuItemType[]
 
